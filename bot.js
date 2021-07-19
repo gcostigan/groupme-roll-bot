@@ -1,7 +1,8 @@
 var HTTPS = require('https');
 
 var botID = process.env.BOT_ID,
-botCommand =  /^\!roll/;
+botCommand1 =  /^\!roll/;
+botCommand2 =  /^\/roll/;
 //roll
 //d4, d6, d8, d10, d20
 //min max
@@ -10,7 +11,7 @@ botCommand =  /^\!roll/;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]);
-  if(request.text && botCommand.test(request.text)){
+  if(request.text && (botCommand1.test(request.text) || botCommand2.test(request.text))){
       commandHandler(this, request);
   } else {
     console.log("don't care");
