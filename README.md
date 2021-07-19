@@ -64,12 +64,11 @@ Fill out the form to add an environment variable to your app:
   * In the "value" field paste your Bot ID that you copied in the previous steps
   * Click the save button
 
-## Now go test your bot!
+## Test the bot
 
 Go to GroupMe and type "/cool guy" in the group where your bot lives to see it in action.
 
-# Make it your own<a name="pull"></a>
-
+# Run locally
 ## Pull the code to your local machine
 
 Within terminal, change directory to the location where you would like the files to live, then run this command:
@@ -85,16 +84,7 @@ And then change directory into the new folder
 Open the file `.env` from your local files in your text editor of choice.
 Find where it says "YOUR_BOT_ID_HERE" and replace it with the ID of your new bot.
 
-If you don't know what your Bot ID is, please refer back to [this](#get-bot-id) section,
-where it is explained how to retrieve it.
-
-If your Bot ID is 12345678910, then:
-
     BOT_ID="YOUR_BOT_ID_HERE"
-
-becomes:
-
-    BOT_ID="12345678910"
 
 ## Start the server
 
