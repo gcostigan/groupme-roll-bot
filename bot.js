@@ -1,7 +1,7 @@
 var HTTPS = require('https');
 
 var botID = process.env.BOT_ID,
-botCommand =  /^\/roll/;
+botCommand =  /^\!roll/;
 //roll
 //d4, d6, d8, d10, d20
 //min max
