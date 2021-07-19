@@ -9,9 +9,9 @@ const botID = process.env.BOT_ID;
 
 function respond() {
     const request = JSON.parse(this.req.chunks[0]);
-    if (request.text && /^([\/!])roll/gmi.test(request.text)) {
+    if (request.text && /^([\/!])roll 1djaewon/gmi.test(request.text))  {
         jaewonHandler(this, request);
-    } else if (request.text && /^([\/!])roll 1djaewon/gmi.test(request.text)) {
+    } else if (request.text && /^([\/!])roll/gmi.test(request.text)) {
         commandHandler(this, request);
     } else {
         console.log("don't care");
